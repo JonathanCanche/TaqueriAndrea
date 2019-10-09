@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/letreronada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venta"
+            android:fontFamily="@font/font_capriola"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="25dp"
+        android:text="productos"
+        android:fontFamily="@font/font_capriola"
+        android:textColor="@color/AndreaBlack"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_capriola"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="55dp"
+        android:text="fecha"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/letreroTotal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/AndreaBlack"
+        android:gravity="center"
+        android:paddingRight="30sp"
+        android:text="Total:"
+        android:fontFamily="@font/font_capriola"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/letrero"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/font_capriola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/AndreaBlack"
+        android:text="50"
+        android:textSize="16sp" />
+
+</RelativeLayout>
