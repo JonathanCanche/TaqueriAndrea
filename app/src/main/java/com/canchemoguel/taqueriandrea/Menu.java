@@ -2946,6 +2946,8 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else {
+            SaveProductsTorta();
         }
     }
 
@@ -3094,20 +3096,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,tortaEspecial,cocaVidrio};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
-
-            String[]  Total_venta =  new String[] {burger,tortaEspecial,cocaZero};
+            String[]  Total_venta =  new String[] {torta,burritaco,orden};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3116,20 +3107,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,burrita,burritaco};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
-
-            String[]  Total_venta =  new String[] {burger,burrita,orden};
+            String[]  Total_venta =  new String[] {torta,burritaco,ordenMedia};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3138,20 +3118,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,burrita,ordenMedia};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
-
-            String[]  Total_venta =  new String[] {burger,burrita,cocaPlastico};
+            String[]  Total_venta =  new String[] {torta,burritaco,cocaPlastico};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3160,20 +3129,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,burrita,cocaVidrio};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
-
-            String[]  Total_venta =  new String[] {burger,burrita,cocaZero};
+            String[]  Total_venta =  new String[] {torta,burritaco,cocaVidrio};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3182,20 +3140,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
 
-            String[]  Total_venta =  new String[] {burger,burritaco,orden};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
-
-            String[]  Total_venta =  new String[] {burger,burritaco,ordenMedia};
+            String[]  Total_venta =  new String[] {torta,burritaco,cocaZero};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3204,20 +3151,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,burritaco,cocaPlastico};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
-
-            String[]  Total_venta =  new String[] {burger,burritaco,cocaVidrio};
+            String[]  Total_venta =  new String[] {torta,orden,ordenMedia};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3226,20 +3162,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,burritaco,cocaZero};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
-
-            String[]  Total_venta =  new String[] {burger,orden,ordenMedia};
+            String[]  Total_venta =  new String[] {torta,orden,cocaPlastico};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3248,20 +3173,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,orden,cocaPlastico};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
-
-            String[]  Total_venta =  new String[] {burger,orden,cocaVidrio};
+            String[]  Total_venta =  new String[] {torta,orden,cocaVidrio};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3270,20 +3184,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
 
-            String[]  Total_venta =  new String[] {burger,orden,cocaZero};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
-
-            String[]  Total_venta =  new String[] {burger,ordenMedia,cocaPlastico};
+            String[]  Total_venta =  new String[] {torta,orden,cocaZero};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3292,20 +3195,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,ordenMedia,cocaVidrio};
-
-            String result_venta = ("" + Arrays.asList(Total_venta)).
-                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
-
-            dbHandler = new DbHandler(Menu.this);
-            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
-            Nuevo();
-            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
-
-            String[]  Total_venta =  new String[] {burger,ordenMedia,cocaZero};
+            String[]  Total_venta =  new String[] {torta,ordenMedia,cocaPlastico};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3314,9 +3206,9 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
 
-            String[]  Total_venta =  new String[] {burger,cocaPlastico,cocaVidrio};
+            String[]  Total_venta =  new String[] {torta,ordenMedia,cocaVidrio};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
@@ -3325,9 +3217,452 @@ public class Menu extends AppCompatActivity {
             dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
             Nuevo();
             Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
-        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
 
-            String[]  Total_venta =  new String[] {burger,cocaPlastico,cocaZero};
+            String[]  Total_venta =  new String[] {torta,ordenMedia,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {torta,cocaPlastico,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {torta,cocaPlastico,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) ){
+
+            String[]  Total_venta =  new String[] {torta,cocaVidrio,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else {
+            SaveProductsTortaEspecial();
+        }
+    }
+
+    public void SaveProductsTortaEspecial(){
+
+        if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burrita,burritaco};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burrita,orden};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burrita,ordenMedia};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burrita,cocaPlastico};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burrita,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burrita,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burritaco,orden};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burritaco,ordenMedia};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burritaco,cocaPlastico};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burritaco,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,burritaco,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,orden,ordenMedia};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,orden,cocaPlastico};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,orden,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,orden,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,ordenMedia,cocaPlastico};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,ordenMedia,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,ordenMedia,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,cocaPlastico,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,cocaPlastico,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (burrita==null || burrita.equals("0 burrita")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) ){
+
+            String[]  Total_venta =  new String[] {tortaEspecial,cocaVidrio,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else {
+            SaveProductsBurrita();
+        }
+    }
+
+    public void SaveProductsBurrita(){
+
+        if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,burritaco,orden};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,burritaco,ordenMedia};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,burritaco,cocaPlastico};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,burritaco,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {burrita,burritaco,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,orden,ordenMedia};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,orden,cocaPlastico};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,orden,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta special")) && (burritaco==null || burritaco.equals("0 burritaco")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {burrita,orden,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,ordenMedia,cocaPlastico};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,ordenMedia,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {burrita,ordenMedia,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaZero==null || cocaZero.equals("0 coca zero")) ){
+
+            String[]  Total_venta =  new String[] {burrita,cocaPlastico,cocaVidrio};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaVidrio==null || cocaVidrio.equals("0 coca vidrio")) ){
+
+            String[]  Total_venta =  new String[] {burrita,cocaPlastico,cocaZero};
+
+            String result_venta = ("" + Arrays.asList(Total_venta)).
+                    replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
+
+            dbHandler = new DbHandler(Menu.this);
+            dbHandler.insertUserDetails(Integer.toString(mostrar),result_venta);
+            Nuevo();
+            Toast.makeText(getApplicationContext(),"Guardado en la base de datos",Toast.LENGTH_SHORT).show();
+        }else if ((taco==null || taco.equals("0 taco")) &&  (tacoHarina==null || tacoHarina.equals("0 taco harina")) && (burger==null || burger.equals("0 burger")) && (torta==null || torta.equals("0 torta")) && (tortaEspecial==null || tortaEspecial.equals("0 torta especial")) && (burritaco==null || burritaco.equals("0 burritaco")) && (orden==null || orden.equals("0 orden")) && (ordenMedia==null || ordenMedia.equals("0 media orden")) && (cocaPlastico==null || cocaPlastico.equals("0 coca plastico")) ){
+
+            String[]  Total_venta =  new String[] {burrita,cocaVidrio,cocaZero};
 
             String result_venta = ("" + Arrays.asList(Total_venta)).
                     replaceAll("(^.|.$)", "  ").replace(", ", "  , " );
